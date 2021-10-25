@@ -11,6 +11,7 @@ tf_records_path = '/kuacc/users/ashah20/datasets/clevr_with_masks/clevr_with_mas
 batch_size = 32
 
 dataset = clevr_with_masks.dataset(tf_records_path)
+batched_dataset = dataset.batch(batch_size)
 iterator = batched_dataset.make_one_shot_iterator()
 data = iterator.get_next()
 
