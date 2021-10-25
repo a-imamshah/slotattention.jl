@@ -44,7 +44,7 @@ for element in dataset:
                 msk = Image.fromarray(a_mask)
 
                 y='{}'.format(i).zfill(5)
-                y = '/kuacc/users/ashah20/datasets/clevr_with_masks/clevr6/train/masks/' + y + '_{}.jpg'.format(j).zfill(2)
+                y = '/kuacc/users/ashah20/datasets/clevr_with_masks/clevr6/train/masks/' + y + '_' + '{}.jpg'.format(j).zfill(6)
                 msk.save(y)
             
             
@@ -66,7 +66,7 @@ for element in dataset:
                 msk = Image.fromarray(a_mask)
 
                 y='{}'.format(i).zfill(5)
-                y = '/kuacc/users/ashah20/datasets/clevr_with_masks/clevr6/val/masks/' + y + '_{}.jpg'.format(j).zfill(2)
+                y = '/kuacc/users/ashah20/datasets/clevr_with_masks/clevr6/val/masks/' + y + '_' + '{}.jpg'.format(j).zfill(6)
                 msk.save(y)
         
     elif (counter > val_images):
