@@ -68,5 +68,5 @@ for element in dataset:
                 y = '/kuacc/users/ashah20/datasets/clevr_with_masks/clevr6/val/masks/' + y + '_{}.jpg'.format(j).zfill(2)
                 msk.save(y)
         
-    elif (counter > 5):
+    elif (counter > val_images):
         break
